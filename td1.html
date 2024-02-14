@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="td1.js"></script>
+
+    </head>
+    <body>
+        <header class="header">
+            <h1>TD n°1 Programmation web – Application météo</h1>
+        </header>
+
+        <p>Choisir une ville :        </p>
+        <select id="choixVille" onchange="afficheVille()">
+            <option value="Niort">Niort</option>
+            <option value="Saint-Gelais">Saint-Gelais</option>
+            <option value="Echire">Echire</option>
+        </select>
+
+        <div class="flex">
+            <div id="Niort" class="ville">
+                <h2>Niort</h2>
+                <p>12°, pluvieux</p>
+                <img src="pluvieux.png" alt="Pluvieux" />
+            </div>
+    
+            <div id="Saint-Gelais" class="ville">
+                <h2>Saint-Gelais</h2>
+                <p>25°, ensoleillé</p>
+                <img src="ensoleille.png" alt="Ensoleillé" />
+            </div>
+    
+            <div id="Echire" class="ville">
+                <h2>Echire</h2>
+                <p>17°, orageux</p>
+                <img src="orageux.png" alt="Orageux" />
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Malo Fremondiere</p>
+            <p>Icônes météo : <a href="https://thenounproject.com" target="_blank">The Noun Project</a></p>
+        </footer>
+
+    </body>
+</html>
